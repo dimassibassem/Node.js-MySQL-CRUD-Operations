@@ -1,0 +1,25 @@
+head
+    title Pug
+h1 Add:
+form(method='POST' action='/employees')
+    label(for='Name') Name:
+    br
+    input#Name(type='text' name='Name')
+    br
+    label(for='EmpCode') EmpCode:
+    br
+    input#EmpCode(type='text' name='EmpCode')
+    br
+    label(for='Salary') Salary:
+    br
+    input#Salary(type='text' name='Salary')
+    br
+    input(type='submit' value='Submit')
+h1 Delete:
+form(method='put' action='/employees')
+    label(for='Id') Id:
+    br
+    input#Id(type='text' name='Id')
+    br
+
+    input(type='submit' value='Submit')
